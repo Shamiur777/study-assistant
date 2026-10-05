@@ -1,5 +1,7 @@
 # Study Assistant (cited answers, honest refusals)
 
+[![tests](https://github.com/Shamiur777/study-assistant/actions/workflows/tests.yml/badge.svg)](https://github.com/Shamiur777/study-assistant/actions)
+
 A question-answering assistant over a small set of human anatomy notes. It answers only from the notes, shows exactly which section each answer came from, and says "I can't answer that" when the notes don't cover the question.
 
 The notes are original and the project uses no external data or API to run.
@@ -43,7 +45,7 @@ Caveat: 48 questions is small. These numbers show the method works and where it 
 ## Run it
 
 ```bash
-python -m pytest -q                      # 9 tests, no API key needed
+python -m pytest -q                      # 11 tests, no API key needed
 python -m study.ask "What does the left ventricle do?"
 python -m study.ask                      # interactive
 python -m study.evaluate                 # reproduce the table above
